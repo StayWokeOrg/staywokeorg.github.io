@@ -16,6 +16,10 @@
 	Generic Styles
 --------------------------*/
 
+body {
+	background-color: #000;
+}
+
 body, div, p, span, li, blockquote, small {
 	color: @color--text;
 	font-family: @font--body;
@@ -54,9 +58,11 @@ blockquote {
 	font-size: 24px;
 	font-weight: 700;
 	font-style: italic;
+	border-left: 5px solid @color--secondary;
 
 	small {
-		font-color: #ccc;
+		color: #ccc;
+		font-weight: 400;
 	}
 }
 
@@ -95,6 +101,20 @@ header {
 #intro {
 	background-color: #333;
 }
+
+/* ------------------------
+	Section: Projects
+--------------------------*/
+
+#projects {
+	background-color: #222;
+
+	[class*="col"] {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
 
 /* ------------------------
 	Footer
