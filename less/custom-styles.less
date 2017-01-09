@@ -1,0 +1,106 @@
+
+/* ------------------------
+	Variables
+--------------------------*/
+
+// Note these are just placeholder
+@color--primary: 	#222;	//darkgray
+@color--secondary:	#db2b39; //red
+@color--text:		#fff;
+@color--link:		#f3a712; //gold-ish
+
+@font--body:		'Source Sans Pro', Helvetica, Arial, Verdana, sans-serif;
+
+
+/* ------------------------
+	Generic Styles
+--------------------------*/
+
+body, div, p, span, li, blockquote, small {
+	color: @color--text;
+	font-family: @font--body;
+	font-size: 16px;
+}
+
+header, section, footer {
+	padding: 60px 0;
+}
+
+h1 {
+	color: @color--text;
+	font-weight: 900;
+	font-size: 50px;
+	font-family: @font--body;
+}
+h2 {
+	color: #ccc;
+	font-weight: 700;
+	font-size: 20px;
+	font-family: @font--body;
+	text-transform: uppercase;
+}
+h3 {
+	color: @color--text;
+	font-weight: 700;
+	font-size: 26px;
+	font-family: @font--body;
+}
+
+.row {
+	padding: 30px 0;  // could be reduced if too extreme
+}
+
+blockquote {
+	font-size: 24px;
+	font-weight: 700;
+	font-style: italic;
+
+	small {
+		font-color: #ccc;
+	}
+}
+
+a {
+	color: @color--link;
+	font-family: @font--body;
+	font-size: 16px;
+	font-weight: 700;
+
+	&:hover, &:focus {
+		border-bottom: 2px solid @color--link;
+		padding-bottom: 1px;
+		text-decoration: none;
+		color: @color--link;
+	}
+}
+
+/* ------------------------
+	Header
+--------------------------*/
+
+header {
+	background-color: @color--primary;
+
+	.block--heading {
+		border: 5px solid @color--secondary;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+}
+
+/* ------------------------
+	Section: Intro
+--------------------------*/
+
+#intro {
+	background-color: #333;
+}
+
+/* ------------------------
+	Footer
+--------------------------*/
+
+footer {
+	background-color: #111;
+}
+
