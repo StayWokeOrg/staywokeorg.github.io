@@ -1,6 +1,42 @@
 
 /* ------------------------
-	Variables
+Selected Bootstrap Imports
+--------------------------*/
+
+// Core variables and mixins
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
+
+// Reset and dependencies
+@import "bootstrap/normalize.less";
+@import "bootstrap/print.less";
+@import "bootstrap/glyphicons.less";
+
+// Core CSS
+@import "bootstrap/scaffolding.less";
+@import "bootstrap/type.less";
+@import "bootstrap/code.less";
+@import "bootstrap/grid.less";
+@import "bootstrap/tables.less";
+@import "bootstrap/forms.less";
+@import "bootstrap/buttons.less";
+
+// Components
+@import "bootstrap/component-animations.less";
+@import "bootstrap/dropdowns.less";
+@import "bootstrap/navs.less";
+@import "bootstrap/navbar.less";
+@import "bootstrap/list-group.less";
+@import "bootstrap/panels.less";
+@import "bootstrap/close.less";
+
+// Utility classes
+@import "bootstrap/utilities.less";
+@import "bootstrap/responsive-utilities.less";
+
+
+/* ------------------------
+	Custom Variables
 --------------------------*/
 
 // Note these are just placeholder
@@ -24,6 +60,7 @@ body, div, p, span, li, blockquote, small {
 	color: @color--text;
 	font-family: @font--body;
 	font-size: 16px;
+	line-height: 24px;
 }
 
 header, section, footer {
@@ -112,7 +149,6 @@ header {
 
 	[class*="col"] {
 		padding-top: 20px;
-		padding-bottom: 20px;
 		background-color: #222;
 	}
 }
@@ -131,7 +167,7 @@ footer {
 	Mobile
 ---------------------------*/
 
-@media (max-width: 768px) {
+@media (max-width: @screen-sm-max) {
 	.row {
 		padding: 0;
 	}

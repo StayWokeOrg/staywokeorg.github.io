@@ -15,13 +15,13 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     
     clean: {
-      site: ['custom-styles.css']
+      site: ['styles.css']
     },
     
     less: {
       site: {
-        src: ['less/custom-styles.less'],
-        dest: 'css/custom-styles.css'
+        src: ['less/styles.less'],
+        dest: 'css/styles.css'
       }
     }
   });
